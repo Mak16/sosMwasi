@@ -10,8 +10,8 @@ function App() {
     <>
       <Navigation />
       <Routes>
-        <Route path="/sosMwasi/" element={<Home />} />
-        <Route path="/sosMwasi/about" element={<About />} />
+        <Route path="/" element={<Home />} />
+        <Route path="/about" element={<About />} />
         <Route />
       </Routes>
       <Footer />

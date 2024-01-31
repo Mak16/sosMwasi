@@ -11,7 +11,7 @@ function Navigation() {
         <Link to="/sosMwasi/">
           <img
             className="sm:max-w-[200px] max-w-[100px] sm:pl-[5%] pl-2"
-            src="src/assets/images/logo_sosmwasi 1.png"
+            src="/src/assets/images/logo_sosmwasi 1.png"
             alt="logo S.O.S Mwasi"
           />
         </Link>

@@ -2,7 +2,7 @@ import Btn from "./Btn";
 function Header() {
   return (
     <>
-      <header className="bg-[url('src/assets/images/african-woman.jpg')] bg-center w-full bg-cover h-screen">
+      <header className="bg-[url('/src/assets/images/african-woman.jpg')] bg-center w-full bg-cover h-screen">
         <div className="absolute top-[25%] sm:top-[50%] left-[5%] sm:w-[40%] w-[80%] sm:m-[50px] my-24 translate-y-[-50%] ">
           <h1 className="text-white text-2xl sm:text-4xl font-bold sm:pt-0 pt-40 ">
             Plateforme d’assistance à la femme congolaise créée par des femmes

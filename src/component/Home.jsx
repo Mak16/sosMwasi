@@ -1,4 +1,6 @@
 import Testimonial from './Testimonial';
+import vector1 from "../assets/images/Vector (1).png"
+import vector from "../assets/images/Vector.png"
 import Header from './Header';
 function Home() {
   return (
@@ -34,7 +36,7 @@ function Home() {
         <div className="pt-[2rem] pb-[2rem] ">
           <div className="pt-0 flex pl-[3%] pr-[3%] flex-row items-center justify-between ">
             <img
-              src="/src/assets/images/Vector.png"
+              src={vector}
               className="w-[17px] h-[29px]"
               alt="vector"
             />
@@ -53,7 +55,7 @@ function Home() {
               nationaux et le développement global. "
             </p>
             <img
-              src="/src/assets/images/Vector (1).png"
+              src={vector1}
               className="w-[17px] h-[29px] "
               alt="vecctor"
             />

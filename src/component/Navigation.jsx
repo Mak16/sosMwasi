@@ -1,62 +1,96 @@
 /* eslint-disable react/no-unescaped-entities */
 import { Icon } from "@iconify/react";
-import Btn from "./Btn";
 import { Link } from "react-router-dom";
 import { useState } from "react";
+import img from "../assets/images/logo_sosmwasi 1.png"
 function Navigation() {
-  let [isOpen, setIsOpen] = useState(false);
+  const [isOpen, setIsOpen] = useState(false);
+  const closeMenu = () => {
+    setIsOpen(false);
+  };
+  const links=[
+    {
+      name: "A propos",
+      link: "/about",
+      className: "text-black flex justify-center items-center text-center text-center xl:h-[70px] h-[50px]",
+    },
+    {
+      name: "Que sont les VGB?",
+      link: "",
+      className: "text-black flex justify-center items-center text-center text-center xl:h-[70px] h-[50px]",
+    },
+    {
+      name: "Que dit la loi?",
+      link: "",
+      className: "text-black flex justify-center items-center text-center text-center xl:h-[70px] h-[50px]",
+    },
+    {
+      name: "Signaler un cas",
+      link: "",
+      className: "bg-[#0096F5] font-bold text-white flex justify-center items-center w-[225px] xl:h-[70px] h-[50px] rounded-[10px] px-[25px] ",
+    },
+    {
+      name: `Appel d'urgence
+      0825505783`,
+      link: "#contact",
+      className:
+        "bg-[#f5119c] font-bold text-white flex justify-center items-center text-center text-center w-[225px] xl:h-[70px] h-[50px] rounded-[10px] px-[25px]",
+    },
+  ]
   return (
     <>
-      <nav className="flex  justify-between items-center bg-white py-[10px] px-[36px] text-sm ">
-        <Link to="/sosMwasi/">
+      <div  className="relative z-50">
+        <div className="flex flex-row justify-between  xl:py-2 py-4 xl:px-10 px-5 top-0 bg-white items-center fixed w-full">
+        <Link to="">
           <img
-            className="sm:max-w-[200px] max-w-[100px] sm:pl-[5%] pl-2"
-            src="/src/assets/images/logo_sosmwasi 1.png"
+            className="sm:max-w-[180px] max-w-[100px] pl-2"
+            src={img}
             alt="logo S.O.S Mwasi"
           />
         </Link>
-        <div onClick={() => setIsOpen(!isOpen)} className="">
-          {isOpen ? (
-            <Icon
-              className="text-[#0096F5] block sm:hidden text-[2rem] sm:text-[46px]"
-              icon="line-md:menu-to-close-alt-transition"
-            />
-          ) : (
-            <Icon
-              className="text-[#0096F5] block sm:hidden text-[2rem] sm:text-[46px]"
-              icon="mdi-light:menu"
-            />
-          )}
+          <ul className="hidden lg:flex gap-10">
+            {links.map((link) => (
+              <li key={link.name}>
+                <a href={link.link} className={link.className}>
+                  {link.name}
+                </a>
+              </li>
+            ))}
+          </ul>
+          <div
+            onClick={() => setIsOpen(!isOpen)}
+            className="absolute z-10 right-4 top-3 cursor-pointer lg:hidden"
+          >
+            {isOpen ? (
+              <Icon
+                className="text-[#0096F5] w-10 h-10"
+                icon="material-symbols:close"
+              />
+            ) : (
+              <Icon
+                className="text-[#0096F5] w-10 h-14"
+                icon="material-symbols-light:menu"
+              />
+            )}
+          </div>
+          <ul
+            className={` bg-white lg:flex pl-5 lg:pl-0  lg:items-center lg:pb-0 pb-12 z-10 absolute left-0 w-full lg:z-auto gap-4 transition-all duration-300 ease-in flex lg:flex-row flex-col justify-between 
+                    ${
+                      isOpen
+                        ? "top-14 rounded-b-2xl items-center"
+                        : "top-[-490px] rounded-b-2xl items-center"
+                    }`}
+          >
+            {links.map((link, index) => (
+              <li className={link.className} key={index}>
+                <a href={link.link} onClick={closeMenu}>
+                  {link.name}
+                </a>
+              </li>
+            ))}
+          </ul>
         </div>
-        <ul className="w-[64%] hidden sm:flex flex-col justify-between items-center sm:flex-row md:flex-row lg:flex-row ">
-          <Link to="/sosMwasi/about" className="list-none text-black">
-            A propos
-          </Link>
-          <li className="list-none text-black">Que sont les VGB?</li>
-          <li className="list-none text-black">Que dit la loi?</li>
-          <li>
-            <Btn classBtn="bg-[#0096F5] font-bold text-white flex justify-center items-center w-[225px] h-[70px] rounded-[10px] py-[20px] px-[25px] ">
-              Signaler un cas
-            </Btn>
-          </li>
-          <li>
-            <Btn classBtn="bg-[#f5119c] font-bold text-white flex justify-between w-[225px] h-[70px] rounded-[10px] py-[10px] px-[25px]">
-              <div>
-                <span className="text-sm font-bold">Appel d'urgence</span>
-                <br />
-                <span className="text-sm font-bold">0825505783</span>
-              </div>
-              <div className="text-white">
-                <Icon
-                  className="text-[2rem] sm:text-[46px]"
-                  icon="ant-design:phone-filled"
-                  // style={{ fontSize: "1.5rem" }}
-                />
-              </div>
-            </Btn>
-          </li>
-        </ul>
-      </nav>
+      </div>
     </>
   );
 }

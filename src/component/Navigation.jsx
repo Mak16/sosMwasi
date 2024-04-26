@@ -4,6 +4,11 @@ import { Link } from "react-router-dom";
 import { useState } from "react";
 import img from "../assets/images/logo_sosmwasi 1.png"
 function Navigation() {
+  const [isClicked, setIsClicked] = useState(false);
+
+    const handleClick = () => {
+        setIsClicked(true);
+    };
   const [isOpen, setIsOpen] = useState(false);
   const closeMenu = () => {
     setIsOpen(false);
@@ -16,12 +21,12 @@ function Navigation() {
     },
     {
       name: "Que sont les VGB?",
-      link: "",
+      link: "/vbg",
       className: "text-black flex justify-center items-center text-center text-center xl:h-[70px] h-[50px]",
     },
     {
       name: "Que dit la loi?",
-      link: "",
+      link: "/low",
       className: "text-black flex justify-center items-center text-center text-center xl:h-[70px] h-[50px]",
     },
     {
@@ -32,7 +37,7 @@ function Navigation() {
     {
       name: `Appel d'urgence
       0825505783`,
-      link: "#contact",
+      link: "contact",
       className:
         "bg-[#f5119c] font-bold text-white flex justify-center items-center text-center text-center w-[225px] xl:h-[70px] h-[50px] rounded-[10px] px-[25px]",
     },
@@ -51,9 +56,9 @@ function Navigation() {
           <ul className="hidden lg:flex gap-10">
             {links.map((link) => (
               <li key={link.name}>
-                <a href={link.link} className={link.className}>
+                <Link to={link.link} className={link.className}>
                   {link.name}
-                </a>
+                </Link>
               </li>
             ))}
           </ul>
@@ -83,9 +88,9 @@ function Navigation() {
           >
             {links.map((link, index) => (
               <li className={link.className} key={index}>
-                <a href={link.link} onClick={closeMenu}>
+                <Link to={link.link} onClick={closeMenu}>
                   {link.name}
-                </a>
+                </Link>
               </li>
             ))}
           </ul>

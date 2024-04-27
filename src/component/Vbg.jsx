@@ -1,4 +1,6 @@
 import React from 'react'
+import img from "../assets/images/image 4.png"
+import { Link } from 'react-router-dom'
 
 export default function VBG() {
   return (
@@ -22,13 +24,20 @@ export default function VBG() {
             <div className='bg-[#0096F5] lg:h-48 h-72 w-72 lg:w-48 flex justify-center items-center p-4'>
                 <p className='text-white text-center lg:text-xl text-2xl'>Harcèlement Sexuel</p>
             </div>
-            <div className='bg-[#0096F5] lg:h-48 h-72 w-72 lg:w-48 flex justify-center items-center p-4'>
+            <div className='bg-[#0096F5] lg:h-48 h-72 w-72  lg:w-48 flex justify-center items-center p-4'>
                 <p className='text-white text-center lg:text-xl text-2xl'>Violence Conjugale</p>
             </div>
             <div className='bg-[#0096F5] lg:h-48 h-72 w-72 lg:w-48 flex justify-center items-center p-4'>
                 <p className='text-white text-center lg:text-xl text-2xl'>Mariage Forcé</p>
             </div>
         </div>
+      </div>
+      <div className='bg-[#91D2FB] w-screen h-[40vh] flex flex-col pl-0 space-y-5 lg:pl-20 lg:items-start justify-center items-center'>
+        <p className='text-[#095789] text-center'>Toutes les formes de violences sexistes sont des actes punis et condamnés par la loi</p>
+        <Link to='/low' className='text-[#095789] flex font-bold'>
+          QUE DIT LA LOI SUR LES VBG?
+          <img className='w-7 h-7' src={img} alt="img" />
+        </Link>
       </div>
     </>
   )

@@ -48,7 +48,7 @@ function Navigation() {
         <div className="flex flex-row justify-between  xl:py-2 py-4 xl:px-10 px-5 top-0 bg-white items-center fixed w-full">
         <Link to="">
           <img
-            className="sm:max-w-[180px] max-w-[100px] pl-2"
+            className="sm:max-w-[180px] max-w-[100px]"
             src={img}
             alt="logo S.O.S Mwasi"
           />

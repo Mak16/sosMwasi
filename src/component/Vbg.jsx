@@ -5,7 +5,7 @@ import { Link } from 'react-router-dom'
 export default function VBG() {
   return (
     <>
-    <div className="bg-[#91D2FB] w-full h-screen">
+      <div className="bg-[#91D2FB] w-full h-screen">
         <div className="absolute top-[25%] sm:top-[50%] left-[5%] sm:w-[40%]  z-20 w-[80%] sm:m-[50px] my-24 translate-y-[-50%] ">
           <h1 className="text-[#036D98] text-2xl sm:text-4xl font-bold sm:pt-0 pt-40 ">
             Violences Basées sur le Genre

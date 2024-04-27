@@ -1,6 +1,9 @@
 import React from 'react'
 import SignalerCas from './SignalerCas'
 import Type from './Type';
+import { Link } from 'react-router-dom';
+import img from "../assets/images/image 4.png"
+
 export default function Low() {
   return (
     <div>
@@ -19,6 +22,13 @@ export default function Low() {
       </div>
       <SignalerCas/>
       <Type/>
+      <div className='bg-[#91D2FB] w-screen h-[40vh] flex flex-col pl-0 space-y-5 lg:pl-20 lg:items-start justify-center items-center'>
+        <p className='text-[#095789] text-center'>Agissez dès aujourd’hui pour contribuer à mettre fin à la violence à l’égard des femmes.</p>
+        <Link to='' className='text-[#095789] flex font-bold flex-col justify-center items-center text-center'>
+          LE CHANGEMENT COMMENCE PAR VOUS ET AVEC VOUS.
+          <img className='w-7 h-7' src={img} alt="img" />
+        </Link>
+      </div>
     </div>
   )
 }

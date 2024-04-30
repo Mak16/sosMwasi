@@ -5,6 +5,7 @@ import About from "./component/About";
 import { Route, Routes } from "react-router-dom";
 import VBG from "./component/VBG";
 import SignalerUnCas from "./component/SignalerUnCas"
+import Law from "./component/Law";
 
 function App() {
   return (
@@ -15,6 +16,7 @@ function App() {
         <Route path="/about" element={<About />} />
         <Route path="/vbg" element={<VBG/>} />
         <Route path="/signalerUnCas" element={<SignalerUnCas/>}/>
+        <Route path="/law" element={<Law/>}/>
         <Route />
       </Routes>
       <Footer />

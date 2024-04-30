@@ -26,12 +26,12 @@ function Navigation() {
     },
     {
       name: "Que dit la loi?",
-      link: "/low",
+      link: "/law",
       className: "text-black flex justify-center items-center text-center text-center xl:h-[70px] h-[50px]",
     },
     {
       name: "Signaler un cas",
-      link: "",
+      link: "signalerUnCas",
       className: "bg-[#0096F5] font-bold text-white flex justify-center items-center w-[225px] xl:h-[70px] h-[50px] rounded-[10px] px-[25px] ",
     },
     {

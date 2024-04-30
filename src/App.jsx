@@ -4,7 +4,7 @@ import Home from "./component/Home";
 import About from "./component/About";
 import { Route, Routes } from "react-router-dom";
 import VBG from "./component/VBG";
-import Low from "./component/Low"
+import SignalerUnCas from "./component/SignalerUnCas"
 
 function App() {
   return (
@@ -14,7 +14,7 @@ function App() {
         <Route path="" element={<Home />} />
         <Route path="/about" element={<About />} />
         <Route path="/vbg" element={<VBG/>} />
-        <Route path="/low" element={<Low/>}/>
+        <Route path="/signalerUnCas" element={<SignalerUnCas/>}/>
         <Route />
       </Routes>
       <Footer />

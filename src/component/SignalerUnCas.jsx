@@ -4,7 +4,7 @@ import Type from './Type';
 import { Link } from 'react-router-dom';
 import img from "../assets/images/image 4.png"
 
-export default function Low() {
+export default function SignalerUnCas() {
   return (
     <div>
       <div className="bg-[#0096F5] w-full h-screen">

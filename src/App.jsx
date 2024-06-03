@@ -12,11 +12,11 @@ function App() {
     <>
       <Navigation />
       <Routes>
-        <Route path="" element={<Home />} />
-        <Route path="/about" element={<About />} />
-        <Route path="/vbg" element={<VBG/>} />
-        <Route path="/signalerUnCas" element={<SignalerUnCas/>}/>
-        <Route path="/law" element={<Law/>}/>
+        <Route path="/sosMwasi" element={<Home />} />
+        <Route path="/sosMwasi/about" element={<About />} />
+        <Route path="/sosMwasi/vbg" element={<VBG/>} />
+        <Route path="/sosMwasi/signalerUnCas" element={<SignalerUnCas/>}/>
+        <Route path="/sosMwasi/law" element={<Law/>}/>
         <Route />
       </Routes>
       <Footer />

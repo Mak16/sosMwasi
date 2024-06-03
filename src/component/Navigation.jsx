@@ -16,28 +16,28 @@ function Navigation() {
   const links=[
     {
       name: "A propos",
-      link: "/about",
+      link: "/sosMwasi/about",
       className: "text-black flex justify-center items-center text-center text-center xl:h-[70px] h-[50px]",
     },
     {
       name: "Que sont les VGB?",
-      link: "/vbg",
+      link: "/sosMwasi/vbg",
       className: "text-black flex justify-center items-center text-center text-center xl:h-[70px] h-[50px]",
     },
     {
       name: "Que dit la loi?",
-      link: "/law",
+      link: "/sosMwasi/law",
       className: "text-black flex justify-center items-center text-center text-center xl:h-[70px] h-[50px]",
     },
     {
       name: "Signaler un cas",
-      link: "signalerUnCas",
+      link: "/sosMwasi/signalerUnCas",
       className: "bg-[#0096F5] font-bold text-white flex justify-center items-center w-[225px] xl:h-[70px] h-[50px] rounded-[10px] px-[25px] ",
     },
     {
       name: `Appel d'urgence
       0825505783`,
-      link: "contact",
+      link: "/sosMwasi/contact",
       className:
         "bg-[#f5119c] font-bold text-white flex justify-center items-center text-center text-center w-[225px] xl:h-[70px] h-[50px] rounded-[10px] px-[25px]",
     },
@@ -46,7 +46,7 @@ function Navigation() {
     <>
       <div  className="relative z-50">
         <div className="flex flex-row justify-between  xl:py-2 py-4 xl:px-10 px-5 top-0 bg-white items-center fixed w-full">
-        <Link to="">
+        <Link to="/sosMwasi/">
           <img
             className="sm:max-w-[180px] max-w-[100px]"
             src={img}

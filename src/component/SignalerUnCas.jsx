@@ -7,15 +7,15 @@ import img from "../assets/images/image 4.png"
 export default function SignalerUnCas() {
   return (
     <div>
-      <div className="bg-[#0096F5] w-full h-screen">
+      <div className="bg-blue w-full h-screen">
         <div className="absolute top-[25%] sm:top-[50%] left-[5%] sm:w-[40%]  z-20 w-[80%] sm:m-[50px] my-24 translate-y-[-50%] ">
-          <h1 className="text-white text-2xl sm:text-4xl font-bold sm:pt-0 pt-40 ">
+          <h1 className="text-white sm:pt-0 pt-40 text-3xl sm:text-5xl text-center lg:text-left font-bold font-poppins">
           Violence à l’égard des femmes et des filles
           </h1>
-          <p className="text-white mb-[25px] pt-[30px] ">
+          <p className="text-white text-lg sm:text-xl mb-6 pt-7 font-poppins text-center lg:text-left ">
             La violence à l’égard des femmes et des filles se définit comme tout acte de violence basée sur le genre entraînant, ou pouvant entraîner, des souffrances ou des troubles physiques, sexuels ou mentaux. Cette définition inclut la menace de tels actes, la coercition ou la privation arbitraire de liberté, que ce soit dans la vie publique ou privée.
           </p>
-            <p className="text-white font-bold">
+            <p className="text-white font-bold font-poppins">
               ONUFEMMES - <br /> unwomen.org
             </p>
         </div>

@@ -17,35 +17,35 @@ function Navigation() {
     {
       name: "A propos",
       link: "/sosMwasi/about",
-      className: "text-black flex justify-center items-center text-center text-center xl:h-[70px] h-[50px]",
+      className: "text-black font-semibold font-poppins flex justify-center items-center text-center text-center xl:h-[70px] h-[50px]",
     },
     {
       name: "Que sont les VGB?",
       link: "/sosMwasi/vbg",
-      className: "text-black flex justify-center items-center text-center text-center xl:h-[70px] h-[50px]",
+      className: "text-black font-semibold font-poppins flex justify-center items-center text-center text-center xl:h-[70px] h-[50px]",
     },
     {
       name: "Que dit la loi?",
       link: "/sosMwasi/law",
-      className: "text-black flex justify-center items-center text-center text-center xl:h-[70px] h-[50px]",
+      className: "text-black font-semibold font-poppins flex justify-center items-center text-center text-center xl:h-[70px] h-[50px]",
     },
     {
       name: "Signaler un cas",
       link: "/sosMwasi/signalerUnCas",
-      className: "bg-[#0096F5] font-bold text-white flex justify-center items-center w-[225px] xl:h-[70px] h-[50px] rounded-[10px] px-[25px] ",
+      className: "bg-blue font-bold font-poppins text-white flex justify-center items-center w-[225px] xl:h-[70px] h-[50px] rounded-[10px] px-[25px] ",
     },
     {
       name: `Appel d'urgence
       0825505783`,
       link: "/sosMwasi/contact",
       className:
-        "bg-[#f5119c] font-bold text-white flex justify-center items-center text-center text-center w-[225px] xl:h-[70px] h-[50px] rounded-[10px] px-[25px]",
+        "bg-pink font-bold font-poppins text-white flex justify-center items-center text-center text-center w-[225px] xl:h-[70px] h-[50px] rounded-[10px] px-[25px]",
     },
   ]
   return (
     <>
       <div  className="relative z-50">
-        <div className="flex flex-row justify-between  xl:py-2 py-4 xl:px-10 px-5 top-0 bg-white items-center fixed w-full">
+        <div className="flex flex-row justify-between py-4 xl:px-10 px-5 top-0 bg-white items-center fixed w-full">
         <Link to="/sosMwasi/">
           <img
             className="sm:max-w-[180px] max-w-[100px]"
@@ -68,12 +68,12 @@ function Navigation() {
           >
             {isOpen ? (
               <Icon
-                className="text-[#0096F5] w-10 h-10"
+                className="text-blue w-10 h-10"
                 icon="material-symbols:close"
               />
             ) : (
               <Icon
-                className="text-[#0096F5] w-10 h-14"
+                className="text-blue w-10 h-14"
                 icon="material-symbols-light:menu"
               />
             )}

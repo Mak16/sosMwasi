@@ -1,22 +1,27 @@
-import React from "react";
 import img from "../assets/images/image 4.png";
+import img1 from "../assets/images/refuse-isolated-r.png";
 import { Link } from "react-router-dom";
 
 export default function VBG() {
   return (
     <>
-      <div className="bg-[#91D2FB] w-full h-screen">
-        <div className="absolute top-[25%] sm:top-[50%] left-[5%] sm:w-[40%]  z-20 w-[90%] sm:m-[50px] my-24 translate-y-[-50%] ">
-          <h1 className="text-[#036D98] text-3xl sm:text-5xl text-center lg:text-left font-bold font-poppins sm:pt-0 pt-40 ">
-            Violences Basées sur le Genre
-          </h1>
-          <p className="text-[#095789] text-lg sm:text-xl mb-6 pt-7 font-poppins text-center lg:text-left ">
-            La violence basée sur le genre (VBG), parfois aussi appelée violence
-            sexiste, se réfère à l’ensemble des actes nuisibles, dirigés contre
-            un individu ou un groupe d’individus en raison de leur identité de
-            genre. Elle prend racine dans l’inégalité entre les sexes, l’abus de
-            pouvoir et les normes néfastes.
-          </p>
+      <div className="bg-[#91D2FB] w-full">
+        <div className="flex lg:flex-row flex-col w-[70%] lg:h-[80vh] mx-auto items-center justify-between lg:pt-28 lg:pb-0 pb-10 pt-0">
+          <div className="lg:w-1/2 w-full">
+            <h1 className="text-[#036D98] text-3xl sm:text-5xl text-center lg:text-left font-bold font-poppins sm:pt-0 pt-40 ">
+              Violences Basées sur le Genre
+            </h1>
+            <p className="text-[#095789] text-lg sm:text-xl mb-6 pt-7 font-poppins text-center lg:text-left ">
+              La violence basée sur le genre (VBG), parfois aussi appelée
+              violence sexiste, se réfère à l’ensemble des actes nuisibles,
+              dirigés contre un individu ou un groupe d’individus en raison de
+              leur identité de genre. Elle prend racine dans l’inégalité entre
+              les sexes, l’abus de pouvoir et les normes néfastes.
+            </p>
+          </div>
+          <div className="h-full lg:block hidden">
+            <img className="object-contain h-full w-full" src={img1} alt="" />
+          </div>
         </div>
       </div>
       <div className="mb-8 lg:py-10 py-5">
@@ -51,7 +56,10 @@ export default function VBG() {
           Toutes les formes de violences sexistes sont des actes punis et
           condamnés par la loi
         </p>
-        <Link to="/sosMwasi/law" className="text-[#095789] font-poppins flex font-bold">
+        <Link
+          to="/sosMwasi/law"
+          className="text-[#095789] font-poppins flex font-bold"
+        >
           QUE DIT LA LOI SUR LES VBG?
           <img className="w-7 h-7 font-bold" src={img} alt="img" />
         </Link>

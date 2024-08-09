@@ -1,5 +1,4 @@
 import { Icon } from '@iconify/react/dist/iconify.js'
-import React from 'react'
 import { Link } from 'react-router-dom'
 import img from "../assets/images/image 4.png"
 

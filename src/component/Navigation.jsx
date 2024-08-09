@@ -15,6 +15,11 @@ function Navigation() {
   };
   const links=[
     {
+      name: "Accueil",
+      link: "/sosMwasi/",
+      className: "text-black font-semibold font-poppins flex justify-center items-center text-center text-center xl:h-[70px] h-[50px]",
+    },
+    {
       name: "A propos",
       link: "/sosMwasi/about",
       className: "text-black font-semibold font-poppins flex justify-center items-center text-center text-center xl:h-[70px] h-[50px]",

@@ -46,48 +46,12 @@ const teams = [
     date: "20121031",
     photo: photo4,
   },
-  {
-    member: "Ruth",
-    funct: "Google developer",
-    facebook: "/",
-    twitter: "/",
-    linkedIn: "/",
-    date: "20111231",
-    photo: photo5,
-  },
-  {
-    member: "Ackeem",
-    funct: "Web designer",
-    facebook: "/",
-    twitter: "/",
-    linkedIn: "/",
-    date: "20240322",
-    photo: photo6,
-  },
-  {
-    member: "Paulin",
-    funct: "Web developer",
-    facebook: "/",
-    twitter: "/",
-    linkedIn: "/",
-    date: "20121031",
-    photo: photo7,
-  },
-  {
-    member: "Jenifer",
-    funct: "Google developer",
-    facebook: "/",
-    twitter: "/",
-    linkedIn: "/",
-    date: "20111231",
-    photo: photo8,
-  },
 ];
 
 function TeamMember({ member }) {
   return (
     <div className="flex flex-col items-center">
-      <div className="w-80 h-96 overflow-hidden rounded-xl">
+      <div className="lg:w-80 lg:h-96 w-60 h-56 overflow-hidden rounded-xl">
         <img
           className="object-cover h-full w-full"
           src={member.photo}

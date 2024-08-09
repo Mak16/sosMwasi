@@ -1,3 +1,4 @@
+import News from "./News";
 import Partener from "./Partener";
 import Team from "./Team";
 
@@ -19,7 +20,7 @@ function About() {
             </div>
           </div>
           <div className="lg:w-1/2 w-full justify-center flex flex-col lg:mt-20 -mt-8 lg:space-y-8 space-y-6">
-            <p className="font-poppins text-justify lg:text-left text-xl text-black">
+            <p className="font-poppins text-center lg:text-left lg:text-xl text-lg text-black">
               SosMwasi est une initiative dédiée à la protection et à
               l'autonomisation des femmes en situations de vulnérabilité. Nous
               œuvrons pour offrir un soutien, des ressources et une voix aux
@@ -71,6 +72,7 @@ function About() {
         </div>
       </div>
       <Team/>
+      <News/>
     </div>
   );
 }

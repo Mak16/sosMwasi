@@ -25,7 +25,7 @@ export default function Partener() {
       <div className="w-[90%] mx-auto">
       <p className="font-poppins lg:text-left text-center my-5 text-lg">Nous travaillons en partenariat avec diverses associations locales et internationales pour offrir un soutien complet aux femmes.</p>
       </div>
-      <div className="w-full h-12">
+      <div className="w-full lg:h-12 h-16">
         <Marquee
           gradient
           pauseOnHover="true"

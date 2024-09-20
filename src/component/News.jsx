@@ -7,7 +7,7 @@ import moment from "moment";
 
 const news = [
   {
-    title: "Ne pas détruire la verdure et ne pas gâcher le paysage",
+    title: "Denoncez les violences basées sur le genre en toute sécurité",
     description:
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros.",
     info: "/",
@@ -15,7 +15,7 @@ const news = [
     source: image,
   },
   {
-    title: "Le changement climatique est-il plus rapide que prévu ?",
+    title: "Le changement est-il plus rapide que prévu ?",
     description:
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros.",
     info: "/",
@@ -23,7 +23,7 @@ const news = [
     source: image1,
   },
   {
-    title: "10 faits marquants sur les parcs éoliens que vous ignoriez",
+    title: "Stop aux violences à l’égard des femmes et des filles",
     description:
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros.",
     info: "/",
@@ -31,7 +31,7 @@ const news = [
     source: image2,
   },
   {
-    title: "Notre objectif est de rendre l'eau accessible à tous",
+    title: "Notre objectif est de donner le sourire à tous",
     description:
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros.",
     info: "/",
